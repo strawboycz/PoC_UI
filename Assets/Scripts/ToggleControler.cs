@@ -9,18 +9,22 @@ public class ToggleControler : MonoBehaviour
   public Toggle toggle;
   public TextMeshProUGUI textToToggle;
 
-  private void Start()
+  private void FixedUpdate()
   {
 	  toggle.onValueChanged.AddListener(OnToggleValueChanged);
+	  if (toggle.isOn == true)
+	  {
+		  textToToggle.SetText("On");
+	  }
+	  else
+	  {
+		  textToToggle.SetText("Off");
+	  }
   }
 
   private void OnToggleValueChanged(bool isOn)
   {
     Debug.Log("toggle");
-    if (textToToggle.text == "On")
-	  {
-		  textToToggle.SetText("Off");
-	  }
-    else textToToggle.SetText("On");
+   
   }
 }
