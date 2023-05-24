@@ -1,16 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public static class LevelLoader
 {
 	public enum Scene
 	{
-    MenuScene,
-    LoadingScene,
-    GameScene
+		MenuScene,
+		LoadingScene,
+		GameScene
 	}
 
 	private static Action onLevelLoaderCallback;
@@ -22,7 +19,6 @@ public static class LevelLoader
 			SceneManager.LoadScene(scene.ToString());
 		};
 		SceneManager.LoadScene(Scene.LoadingScene.ToString());
-		
 	}
 
 	public static void LevelLoaderCallback()

@@ -13,5 +13,6 @@ public class NewGameButtonBehavior : MonoBehaviour
 	void TaskOnClick()
 	{
 		LevelLoader.load(LevelLoader.Scene.GameScene);
+		PointsManager.DeletePointData();
 	}
 }
