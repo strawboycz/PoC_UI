@@ -12,7 +12,7 @@ public class NewGameButtonBehavior : MonoBehaviour
 	}
 	void TaskOnClick()
 	{
-		LevelLoader.load(LevelLoader.Scene.GameScene);
+		LevelLoader.load(LevelLoader.Scene.ChooseGameTypeScene);
 		PointsManager.DeletePointData();
 	}
 }
