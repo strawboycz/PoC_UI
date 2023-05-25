@@ -14,5 +14,6 @@ public class SaveGame : MonoBehaviour
 	void TaskOnClick()
 	{
 		PointsManager.SavePoints();
+		GameDataManager.SaveCurrentData();
 	}
 }
