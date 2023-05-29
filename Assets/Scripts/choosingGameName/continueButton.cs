@@ -16,6 +16,7 @@ public class continueButton : MonoBehaviour
     void TaskOnClick()
     {
 	    GameDataManager.data.gameName = textGameObject.GetComponent<TMP_Text>().text;
+      Debug.Log("Game name set to " + GameDataManager.data.gameName);
 	    LevelLoader.load(LevelLoader.Scene.GameScene);
     }
 }

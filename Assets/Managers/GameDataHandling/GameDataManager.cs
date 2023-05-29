@@ -13,7 +13,8 @@ public static class GameDataManager
 	public static void SaveCurrentData()
 	{
 		BinaryFormatter formatter = new BinaryFormatter();
-		filePath = Application.persistentDataPath  + data.gameName;
+		filePath = Application.persistentDataPath + "/" + data.gameName  + ".bin";
+		Debug.Log("SAVING AS " +filePath + " with type " + data.gameType);
 		FileStream fs = new FileStream(filePath, FileMode.Create);
 		formatter.Serialize(fs, data);
 		fs.Close();
@@ -21,7 +22,8 @@ public static class GameDataManager
 	public static void LoadData(string GameName)
 	{
 
-		filePath = Application.persistentDataPath  + GameName;
+		filePath = Application.persistentDataPath + "/" + GameName;
+		
 		if (File.Exists(filePath))
 		{
 			BinaryFormatter formatter = new BinaryFormatter();
@@ -32,7 +34,7 @@ public static class GameDataManager
 		else
 			data = new GameData();
 
-
+		Debug.Log("LOADING AS " + filePath + " with type " + data.gameType + "and point count is " + data.pointCount);
 	}
 	public static void DeleteData(string GameName)
 	{

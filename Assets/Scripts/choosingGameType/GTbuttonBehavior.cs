@@ -15,6 +15,7 @@ public class GTbuttonBehavior : MonoBehaviour
     void TaskOnClick()
     {
 	    GameDataManager.data.gameType = gameType;
+      Debug.Log("Game type set to " + GameDataManager.data.gameType);
       LevelLoader.load(LevelLoader.Scene.ChooseGameNameScene);
     }
 

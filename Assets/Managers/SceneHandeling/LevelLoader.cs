@@ -9,7 +9,8 @@ public static class LevelLoader
 		LoadingScene,
 		GameScene,
 		ChooseGameTypeScene,
-		ChooseGameNameScene
+		ChooseGameNameScene,
+		LoadGameScene
 	}
 
 	private static Action onLevelLoaderCallback;
