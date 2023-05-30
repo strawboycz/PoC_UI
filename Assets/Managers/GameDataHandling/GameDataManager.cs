@@ -45,7 +45,7 @@ public static class GameDataManager
 	public static void DeleteData(string GameName)
 	{
 		EraseData();
-		filePath = Application.persistentDataPath  + GameName;
+		filePath = Application.persistentDataPath + "/" + GameName;
 		if (File.Exists(filePath))
 		{
 			File.Delete(filePath);

@@ -19,6 +19,8 @@ public class ShowFiles : MonoBehaviour
 			GameDataManager.LoadData(file.Name);
 			newFilebox.transform.Find("Frame").transform.Find("GameType").GetComponent<TMP_Text>().text = GameDataManager.data.gameType.ToString();
 
+			newFilebox.transform.localScale = new Vector3(1, 1, 1);
+
 			GameDataManager.EraseData();
 
 			
