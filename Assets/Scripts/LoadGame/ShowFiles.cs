@@ -14,7 +14,14 @@ public class ShowFiles : MonoBehaviour
 		{
 			GameObject newFilebox =  Instantiate(FileBox);
 			newFilebox.transform.SetParent(Frame.transform);
-			var michael = newFilebox.transform.Find("Frame").transform.Find("FileName").GetComponent<TMP_Text>().text = file.Name;
+			newFilebox.transform.Find("Frame").transform.Find("FileName").GetComponent<TMP_Text>().text = file.Name;
+
+			GameDataManager.LoadData(file.Name);
+			newFilebox.transform.Find("Frame").transform.Find("GameType").GetComponent<TMP_Text>().text = GameDataManager.data.gameType.ToString();
+
+			GameDataManager.EraseData();
+
+			
 		}
 	}
 }

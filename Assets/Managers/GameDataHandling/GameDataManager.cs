@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class GameDataManager
 {
-	public static GameData data = new GameData();
+	public static GameData data { get; private set; } = new GameData();
 
 	public static string filePath;
 
@@ -36,9 +36,15 @@ public static class GameDataManager
 
 		Debug.Log("LOADING AS " + filePath + " with type " + data.gameType + "and point count is " + data.pointCount);
 	}
-	public static void DeleteData(string GameName)
+
+	public static void EraseData()
 	{
 		data = new GameData();
+	}
+
+	public static void DeleteData(string GameName)
+	{
+		EraseData();
 		filePath = Application.persistentDataPath  + GameName;
 		if (File.Exists(filePath))
 		{
