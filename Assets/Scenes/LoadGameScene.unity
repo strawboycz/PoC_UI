@@ -220,6 +220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentGameObject: {fileID: 1469948524}
   childObjects: []
+  ImgNotSorted: {fileID: 21300000, guid: 5c510941bd811f04fa2857a07a64ed1e, type: 3}
+  ImgAsc: {fileID: 21300000, guid: c7733840eadeb6848bd67cb6e6b8d9da, type: 3}
+  ImgDesc: {fileID: 21300000, guid: c351fd11ba4aebe43aaaa571dd23b346, type: 3}
 --- !u!114 &234635165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1659,6 +1662,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentGameObject: {fileID: 1469948524}
   childObjects: []
+  ImgNotSorted: {fileID: 21300000, guid: 5c510941bd811f04fa2857a07a64ed1e, type: 3}
+  ImgAsc: {fileID: 21300000, guid: c7733840eadeb6848bd67cb6e6b8d9da, type: 3}
+  ImgDesc: {fileID: 21300000, guid: c351fd11ba4aebe43aaaa571dd23b346, type: 3}
 --- !u!1 &1620346482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,6 +1877,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentGameObject: {fileID: 1469948524}
+  ImgNotSorted: {fileID: 21300000, guid: 5c510941bd811f04fa2857a07a64ed1e, type: 3}
+  ImgAsc: {fileID: 21300000, guid: c7733840eadeb6848bd67cb6e6b8d9da, type: 3}
+  ImgDesc: {fileID: 21300000, guid: c351fd11ba4aebe43aaaa571dd23b346, type: 3}
   childObjects: []
 --- !u!1 &2056844060
 GameObject:

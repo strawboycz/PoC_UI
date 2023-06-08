@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum GameType
+namespace Assets.Managers.GameDataHandling
 {
+	public enum GameType
+	{
 		None,
-    TypeA,
-    TypeB,
-    TypeC,
+		Sprint,
+		ObstacleRun,
+		AssistedObstacleRun,
+	}
 }

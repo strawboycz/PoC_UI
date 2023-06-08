@@ -1,0 +1,94 @@
+﻿{
+	"questions": [
+		{
+			"question": "Which river flows through London?",
+			"options": [
+				"Rhine",
+				"Thames",
+				"Danube"
+			],
+			"correct_answer": 1
+		},
+		{
+			"question": "Which is the largest continent on Earth?",
+			"options": [
+				"Asia",
+				"Africa",
+				"North America"
+			],
+			"correct_answer": 0
+		},
+		{
+			"question": "Which is the largest island in the world?",
+			"options": [
+				"Madagascar",
+				"Greenland",
+				"Australia"
+			],
+			"correct_answer": 1
+		},
+		{
+			"question": "What is the capital city of Brazil?",
+			"options": [
+				"São Paulo",
+				"Brasília",
+				"Rio de Janeiro"
+			],
+			"correct_answer": 1
+		},
+		{
+			"question": "Which country is the largest producer of coffee in the world?",
+			"options": [
+				"Italy",
+				"Brazil",
+				"Colombia"
+			],
+			"correct_answer": 1
+		},
+		{
+			"question": "Which mountain is the tallest in the world?",
+			"options": [
+				"Mount Everest",
+				"K2",
+				"Kilimanjaro"
+			],
+			"correct_answer": 0
+		},
+		{
+			"question": "Which sea washes the coast of Greece?",
+			"options": [
+				"Mediterranean Sea",
+				"Aegean Sea",
+				"Ionian Sea"
+			],
+			"correct_answer": 1
+		},
+		{
+			"question": "Where is the Great Wall of China located?",
+			"options": [
+				"China",
+				"Japan",
+				"India"
+			],
+			"correct_answer": 0
+		},
+		{
+			"question": "What is the longest river in Africa?",
+			"options": [
+				"Nile",
+				"Congo",
+				"Zambezi"
+			],
+			"correct_answer": 0
+		},
+		{
+			"question": "Which country is known for its production of cheeses like Camembert and Brie?",
+			"options": [
+				"Italy",
+				"France",
+				"Switzerland"
+			],
+			"correct_answer": 1
+		}
+	]
+}
